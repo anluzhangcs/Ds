@@ -1,10 +1,9 @@
 package org.excercise.array;
 
-import com.sun.deploy.util.StringUtils;
-
-import java.io.*;
-import java.util.Arrays;
-import java.util.ResourceBundle;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
 
 /**
  * @author Manny
@@ -30,7 +29,7 @@ public class SparseArray {
         //printArray(target);
         //
         //int[][] normal = toNormal(target);
-        int[][] normal = readThenToNormal(new File("D:\\Code\\Ds\\src\\main\\java\\org\\excercise\\array", "chess.txt"));
+        int[][] normal = readThenToNormal(new File("chess.txt"));
         System.out.println("数组:");
         printArray(normal);
 
@@ -131,7 +130,7 @@ public class SparseArray {
         }
 
         //保存稀疏数组
-        File file = new File("D:\\Code\\Ds\\src\\main\\java\\org\\excercise\\array", "chess.txt");
+        File file = new File("chess.txt");
         FileWriter writer;
         try {
             writer = new FileWriter(file);
@@ -176,7 +175,7 @@ public class SparseArray {
     /**
      * 从文件中读取稀疏数组 ==> 普通二维数组
      *
-     * @param array
+     * @param file
      * @return
      */
     public static int[][] readThenToNormal(File file) {
