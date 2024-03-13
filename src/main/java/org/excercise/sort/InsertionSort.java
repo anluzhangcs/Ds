@@ -28,7 +28,7 @@ public class InsertionSort {
         //用来记录新牌的位置
         int index;
 
-        //插入排序，必须排n趟，因为它每一趟排好后并没有确定一个元素的最终位置
+        ////i从1开始,因为从叫第二张牌才需要排序,一张牌不需要排序
         for (int i = 1; i < arr.length; i++) {
             //arr[i]表示新叫到的牌
             tmp = arr[i];
