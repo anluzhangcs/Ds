@@ -1,6 +1,6 @@
 package org.excercise.leetcode;
 
-import java.util.Arrays;
+import java.util.*;
 
 /**
  * @author Manny
@@ -13,6 +13,10 @@ class Solution1 {
         int[] ints = searchRange(nums, 8);
         System.out.println("sfd");
         System.out.println(Arrays.toString(ints));
+        Map<Integer, Integer> dict = new HashMap<>();
+        dict.values().stream();
+        List<Integer> ans = new LinkedList<>();
+        Integer[] array = ans.toArray(new Integer[ans.size()]);
 
     }
 
